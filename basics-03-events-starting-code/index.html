@@ -28,7 +28,7 @@
       <button v-on:click="addBtn(15)">Add</button>
       <!-- . is a modify and changes the normal process -->
       <!-- . right only allows right click of the mouse -->
-      <button v-on:click.right="remBtn(5)">Remove</button>
+      <button v-on:click="remBtn(5)">Remove</button>
 
       <!-- v-once only works once therefore wont change on the counter changes -->
       <p v-once>Starting Counter: {{ counter }}</p>
@@ -36,6 +36,7 @@
 
       <!-- stores the name only on "enter" pressed -->
       <input type="text" v-model="name" />
+      <input type="text" v-model="lastName" />
       <button v-on:click="resetInput">Reset</button>
       <p>Your name: {{ fullName }}</p>
 
